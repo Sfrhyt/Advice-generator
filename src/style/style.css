@@ -1,0 +1,120 @@
+* {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #202632;
+}
+
+.advice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 570px;
+  padding: 0 45px;
+  border-radius: 12px;
+  background-color: #313a48;
+}
+
+.advice-title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  padding: 45px 0 0;
+}
+
+.advice-title h1 {
+  font-size: 14px;
+  letter-spacing: 6px;
+  color: hsl(150, 100%, 66%)
+}
+
+.advice-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 60%;
+  gap: 40px;
+  margin-top: 23px;
+}
+
+.advice-main p {
+  width: 97%;
+  font-size: 28px;
+  color: hsl(193, 38%, 86%);
+  text-align: center;
+}
+
+.advice-hr {
+  width: 100%;
+  height: 20px;
+  background-image: url("/src/assets/pattern-divider-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  user-select: none;
+}
+
+.advice-button {
+  position: relative;
+  top: 35px;
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+  background-color: hsl(150, 100%, 66%);
+  background-image: url("/src/assets/icon-dice.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.advice-button:hover {
+  transition: box-shadow 1.5s;
+  box-shadow: 0 0 32px hsl(150, 100%, 66%);
+}
+
+@media screen and (max-width: 582px) {
+  .advice {
+    width: 450px;
+  }
+  .advice-hr {
+    background-image: url("/src/assets/pattern-divider-mobile.svg");
+  }
+}
+
+@media screen and (max-width: 472px) {
+  .advice {
+    width: 350px;
+  }
+  .advice-hr {
+    background-image: url("/src/assets/pattern-divider-mobile.svg");
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .advice {
+    width: 260px;
+  }
+  .advice-hr {
+    background-image: url("/src/assets/pattern-divider-mobile.svg");
+  }
+}
